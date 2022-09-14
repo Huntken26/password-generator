@@ -12,3 +12,11 @@ function writePassword() {
 
 // Add event listener to generate button
 generateBtn.addEventListener("click", writePassword);
+
+
+var numbers =[1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+
+var specialCharacters = ["!", "@", "$", "%"];
+
+var letters = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L",];
+
