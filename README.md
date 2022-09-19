@@ -15,7 +15,11 @@ N/A
 ## License 
 N/A
 
+## URLs
 
+Repo- https://github.com/Huntken26/password-generator
+Deployed Site- https://huntken26.github.io/password-generator/
 
 ## screenshots
 
+![Screenshot (20)](https://user-images.githubusercontent.com/107738986/191117728-cc3ee5fe-ebf3-4795-9174-7f0209f1266e.png)
