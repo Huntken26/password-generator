@@ -1,4 +1,4 @@
-// Assignment Code
+
 var generateBtn = document.querySelector("#generate");
 
 // Write password to the #password input
@@ -8,7 +8,7 @@ function writePassword() {
   var passwordText = document.querySelector("#password");
 
   passwordText.value = password;
-  var length = Number;
+  var charLength = Number;
   var string = "abcdefghijklmnopqrstuvwxyz"; //to upper
   var integers = "0123456789";
   var specialCharacters = "!@#$%^&*()_+~`|}{[];?><,./-=";
@@ -27,16 +27,11 @@ function writePassword() {
   /* if true , then string. to uppercase*/
   if ((upperCase = true)) {
     upperCase = string.toUpperCase;
-  } else if ((upperCase = false)) {
-    upperCase = string.toLowerCase;
   }
   var lowerCase = confirm("Would you like lowercase characters?");
   if ((lowerCase = true)) {
     lowerCase = string;
-  } else if ((lowerCase = false)) {
-    lowerCase = string.toUpperCase;
   }
-
   var numbers = confirm("Would you like numbers?");
   if ((numbers = true)) {
     numbers = integers;
@@ -46,11 +41,7 @@ function writePassword() {
     characters = specialCharacters;
   }
 
-  var newPassword = ["upperCase", "lowerCase", "numbers", "characters"];
-
-  var returnPassword = newPassword(Math.floor(Math.random() * charLength));
-
-  return returnPassword;
+  window.alert("Your new passord is ");
 }
 
 // Add event listener to generate button
