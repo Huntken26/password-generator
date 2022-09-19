@@ -46,10 +46,11 @@ function writePassword() {
     characters = specialCharacters;
   }
 
-  var newPassword = "";
+  var newPassword = ["upperCase", "lowerCase", "numbers", "characters"];
 
+  var returnPassword = newPassword(Math.floor(Math.random() * charLength));
 
-  
+  return returnPassword;
 }
 
 // Add event listener to generate button
