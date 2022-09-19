@@ -1,4 +1,3 @@
-
 var generateBtn = document.querySelector("#generate");
 
 // Write password to the #password input
@@ -8,15 +7,15 @@ function writePassword() {
   var passwordText = document.querySelector("#password");
 
   passwordText.value = password;
-  var charLength = Number;
+
   var string = "abcdefghijklmnopqrstuvwxyz"; //to upper
   var integers = "0123456789";
-  var specialCharacters = "!@#$%^&*()_+~`|}{[];?><,./-=";
+  var specialCharacters = "!@#$%^&*";
 
   function generatePassword() {
-    charLength = prompt("Length of Password?", "8-128 characters");
+    length = prompt("Length of Password?", "8-128 characters");
   }
-  if (charLength < 8 || charLength > 128) {
+  if (length < 8 || length > 128) {
     window.alert("Length of password must be 8 characters or higher");
     {
       return;
